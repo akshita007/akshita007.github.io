@@ -35,4 +35,14 @@ http://roy.marples.name/downloads/openresolv/openresolv-3.9.0.tar.xz
   make
   sudo make install
 
-9.openresolv also needs to be accompanied with 
+9.openresolv also needs to be accompanied with helpers to resolve dns,hence install inbound (sudo dnf install inbound*)
+
+10.Download the update-resolv-conf.sh script available at (https://github.com/masterkorp/openvpn-update-resolv-conf/blob/master/update-resolv-conf.sh) and place it in the /etc/openvpn folder
+
+11.From the terminal type:
+ sudo openvpn --config path-to-profile --http-proxy proxy port stdin
+ 
+ Type the proxy username and password and if all settings are correct then you will end up with the statement "Initialisation Sequence Completed" at the terminal.
+ 
+ Tips: You might have to edit resolv.conf( sudo vi /etc/resolv.conf ) to edit the nameserver to 8.8.8.8(the google's dns server )
+ To know more refer to :https://wiki.archlinux.org/index.php/OpenVPN
