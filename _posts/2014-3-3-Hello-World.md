@@ -46,3 +46,4 @@ http://roy.marples.name/downloads/openresolv/openresolv-3.9.0.tar.xz
  
  Tips: You might have to edit resolv.conf( sudo vi /etc/resolv.conf ) to edit the nameserver to 8.8.8.8(the google's dns server )
  To know more refer to :https://wiki.archlinux.org/index.php/OpenVPN
+ https://github.com/masterkorp/openvpn-update-resolv-conf
